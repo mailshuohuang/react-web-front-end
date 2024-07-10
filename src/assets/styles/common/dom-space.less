@@ -1,0 +1,59 @@
+@space-list: 4px 8px 16px 32px 64px;
+
+each(@space-list, .(@v, @k, @i){
+  .p-@{i} {
+    padding: @v!important;
+  }
+
+  .pl-@{i} {
+    padding-left: @v!important;
+  }
+
+  .pr-@{i} {
+    padding-right: @v!important;
+  }
+
+  .pt-@{i} {
+    padding-top: @v!important;
+  }
+
+  .pb-@{i} {
+    padding-bottom: @v!important;
+  }
+
+  .px-@{i} {
+    padding-inline: @v!important;
+  }
+
+  .py-@{i} {
+    padding-block: @v!important;
+  }
+
+  .m-@{i} {
+    margin: @v!important;
+  }
+
+  .ml-@{i} {
+    margin-left: @v!important;
+  }
+
+  .mr-@{i} {
+    margin-right: @v!important;
+  }
+
+  .mt-@{i} {
+    margin-top: @v!important;
+  }
+
+  .mb-@{i} {
+    margin-bottom: @v!important;
+  }
+
+  .mx-@{i} {
+    margin-inline: @v!important;
+  }
+
+  .my-@{i} {
+    margin-block: @v!important;
+  }
+})

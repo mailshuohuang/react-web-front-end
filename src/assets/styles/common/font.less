@@ -1,0 +1,19 @@
+@font-weight: {
+  normal: 400;
+  sturdy: 500;
+  bold: bold
+};
+
+@font-size: 12px 14px 16px 18px 20px 22px 24px 26px 28px 30px 32px 34px;
+
+each(@font-weight, .(@v, @k){
+  .font-weight-@{k} {
+    font-weight: @v;
+  }
+})
+
+each(@font-size, .(@v, @i){
+  .font-size-@{v} {
+    font-size: @v;
+  }
+})

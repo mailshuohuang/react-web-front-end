@@ -1,0 +1,40 @@
+@align-items-list: {
+  start: flex-start;
+  center: center;
+  end: flex-end;
+  stretch: stretch;
+  base: baseline;
+};
+
+@justify-content-list: {
+  start: flex-start;
+  center: center;
+  between: space-between;
+  evenly: space-evenly;
+  around: space-around;
+  end: flex-end;
+};
+
+.d-flex {
+  display: flex;
+}
+
+each(@align-items-list, .(@v, @k){
+  .align-items-@{k} {
+    align-items: @v;
+  }
+})
+
+each(@justify-content-list, .(@v, @k){
+  .justify-content-@{k} {
+    justify-content: @v;
+  }
+})
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
