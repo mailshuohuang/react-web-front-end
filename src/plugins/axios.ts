@@ -38,8 +38,7 @@ const removeRepeatedRequest = function (config) {
 
 const removeAllRequest = function () {
   for (const req of requestPending) {
-    console.log(req)
-    // req.cancel()
+    req.cancel()
   }
 }
 
